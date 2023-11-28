@@ -1,0 +1,91 @@
+.session {
+    display: flex;
+    width: 100vw;
+    background-color: white;
+    height: 100vh;
+    overflow: hidden;
+    @media screen and (max-width:750px) {
+        overflow-y: auto;
+      }
+    &__sidebar {
+        width: 25vw;
+        @media screen and (max-width:1350px) { 
+            width: 30vw;
+        }
+        @media screen and (max-width:1150px) { 
+            width: 32vw;
+        }
+        @media screen and (max-width:750px) { 
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 70vw;
+            height: 100vh;
+    z-index: 51;
+
+            background-color: white;
+        }
+        @media screen and (max-width:600px) { 
+            width: 80vw;
+            
+        }
+    }
+    &-container {
+        width: 75vw;
+        background-color: #2E3848;
+        border-top-left-radius: 15px;
+        
+
+        border-bottom-left-radius: 15px;
+        @media screen and (max-width:750px) { 
+            width: 100vw;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            min-height: 100vh;
+            height: fit-content;
+        }
+    }
+}
+
+.sidebar__open {
+    position: absolute;
+    width: fit-content;
+    // padding-right : 1rem;
+    width: 20px;
+    background: white;
+    border-radius: 10px;
+    height: 20vh;
+    // display: flex;
+    // left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    align-items: center;
+    justify-content: center;
+    display: none;
+    @media screen and (max-width:750px) {
+        display: flex;
+    }
+
+}
+
+
+.overlay__session__sidebar {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 50;
+    @media screen and (min-width:750px) { display: none;}
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}

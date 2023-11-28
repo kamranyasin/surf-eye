@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://surfeye.video/</loc>
+  <lastmod>2022-10-06T13:22:27+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://surfeye.video/auth/</loc>
+  <lastmod>2022-10-06T13:22:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://surfeye.video/termsandconditions/</loc>
+  <lastmod>2022-10-06T13:22:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://surfeye.video/privacypolicy/</loc>
+  <lastmod>2022-10-06T13:22:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://surfeye.video/forgotpassword/</loc>
+  <lastmod>2022-10-06T13:22:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://surfeye.video/admin/coupons/</loc>
+  <lastmod>2022-10-06T13:22:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://surfeye.video/session/</loc>
+  <lastmod>2022-10-06T13:22:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://surfeye.video/session?view=watch/</loc>
+  <lastmod>2022-10-06T13:22:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://surfeye.video/session?view=mysession/</loc>
+  <lastmod>2022-10-06T13:22:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://surfeye.video/session?view=buysession/</loc>
+  <lastmod>2022-10-06T13:22:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://surfeye.video/session?view=myprofile/</loc>
+  <lastmod>2022-10-06T13:22:27+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+</urlset>

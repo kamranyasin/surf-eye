@@ -1,0 +1,66 @@
+.navbar {
+    padding : 0.8rem 6rem;  //tb rl
+    @media screen and (max-width : 1000px) {
+        padding: 0.6rem 4rem;
+    }
+    @media screen and (max-width : 600px) {
+        padding: 0.3rem 2rem;
+    }
+    width: 100vw;
+    position: relative;
+    z-index: 100;
+    background-color: transparent;
+    position: absolute;
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .hamburger-menu-icon {
+            padding: 0.3rem;
+            color: white;
+            
+        }
+        
+    }
+
+    &__logo {
+        width: 190px;
+        @media screen and (max-width:700px) {
+            width: 120px;
+        }
+    }
+    &__links {
+        display: flex;
+        align-items: center;
+    }
+    &__link {
+        &:nth-child(5) {
+            margin-left: -2rem;
+        }
+        margin-left: 2rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: white;
+        font-style: italic;
+        @media screen and (max-width:750px) {
+            display: none;
+        }
+    }
+    &__menu {
+        display: none;
+        @media screen and (max-width:750px) {
+            display: block;
+            color: white;
+        }
+
+    }
+}
+
+
+.navbar-background-normal {
+    background-color: #2E3848;
+    position: unset;
+}
+

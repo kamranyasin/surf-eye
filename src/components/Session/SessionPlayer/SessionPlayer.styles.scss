@@ -1,0 +1,151 @@
+.sessionplayer {
+  padding: 2rem;
+  color: white;
+  width: 100%;
+  @media screen and (max-width:450px) {
+    padding: 0.8rem;
+    
+}
+  &__header {
+    &-back {
+      display: flex;
+      align-items: center;
+      div {
+        margin-left: 0.3rem;
+        font-size: 1.1rem;
+        font-style: italic;
+        text-transform: uppercase;
+      }
+    }
+  }
+&-container {
+    width: 100%;
+    margin-top: 2rem;
+    @media screen and (max-width:500px) {
+        margin-top: 1.3rem;
+    }
+
+}
+&__contents {
+    width: 100%;
+    display: flex;
+    @media screen and (max-width:1155px) {
+        align-items: center;
+    }
+    @media screen and (max-width:1000px) {
+        flex-direction: column-reverse;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center
+        height: 75vh;
+        overflow-y: auto;
+        margin-right: 3rem;
+        width: 30%; 
+        @media screen and (max-width:1155px) {
+            width: 40%;
+        }
+        @media screen and (max-width:1000px) {
+            width: 100%;
+            margin-right: 0rem;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 1rem;
+            height: fit-content;
+            height: 25vh;
+            grid-auto-flow: row;
+            margin-top: 2.2rem;
+            overflow-y: scroll;
+        }
+        @media screen and (max-width:750px) {
+            height: fit-content;
+            overflow: hidden;
+        }
+        @media screen and (max-width:600px) {
+            grid-template-columns: repeat(2,1fr);
+        }
+        @media screen and (max-width:450px) {
+            grid-template-columns: repeat(1,1fr);
+            height: 35vh;
+            overflow-y : scroll;
+            gap: 0.4rem;
+        }
+        margin-top: 2rem;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        &-item {
+            padding: 0.7rem 0.8rem;
+            border: 1px solid white;
+            margin-top: 1rem;
+            @media screen and (max-width:450px) {
+                margin-top: 0.7rem;
+            }
+            display: flex;
+            justify-content: space-between;
+            border-radius: 10px;
+            &-heading {
+                font-size: 1.2rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-style: italic;
+            }
+            &-icons {
+                display: flex;
+                align-items: center;
+                &-icon{
+                    margin-left: 0.6rem;
+                }
+            }
+
+        }
+    }
+    &__player{
+        width: 100%;
+        &__heading {
+            font-size: 2.3rem;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+            width: 70%;
+            font-style: italic;
+            margin: auto;
+            @media screen and (max-width:1300px) {
+                font-size: 1.9rem;
+            }
+            @media screen and (max-width:1100px) {
+                font-size: 1.7rem;
+                width: 90%;
+            }
+        }
+        &-video {
+            margin-top: 2rem;
+            height: 60vh;
+            @media screen and (max-width:1155px) {
+                height: 55vh;
+            }
+            @media screen and (max-width:1000px) {
+                height: 45vh;
+            }
+            @media screen and (max-width:450px) {
+                height: 30vh;
+
+            }
+            background: gray;
+            width: 100%;
+            video {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+}
+
+
+.sessionplayer__contents__list-item-selected {
+    background: white;
+    color: #2E3848;
+}
+

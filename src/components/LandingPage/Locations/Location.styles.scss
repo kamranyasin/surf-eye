@@ -1,0 +1,241 @@
+.locations {
+  background-color: #5e6979;
+  width: 100%;
+
+  &-container {
+    max-width: 1600px;
+    margin: auto;
+    width: 100%;
+    padding: 2.3rem 9rem;
+    padding-bottom: 4rem;
+
+    @media screen and (max-width: 1200px) {
+      padding: 4rem 3rem;
+      padding-top: 2.3rem;
+    }
+    @media screen and (max-width: 750px) {
+      padding: 3rem 3rem;
+      padding-top: 2.3rem;
+    }
+    @media screen and (max-width: 550px) {
+      padding: 1.5rem 2rem;
+    }
+  }
+  &-heading {
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__contents {
+    margin-top: 4.4rem;
+    display: flex;
+    @media screen and (max-width: 750px) {
+      flex-direction: column;
+      margin-top: 3rem;
+    }
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    &-left {
+      display: flex;
+      width: 22vw;
+
+      margin-left: 50px;
+      @media screen and(max-width:1200px) {
+        width: 30vw;
+      }
+      @media screen and(max-width:1000px) {
+        width: 40vw;
+      }
+      @media screen and(max-width:800px) {
+        width: 50vw;
+        margin-left: 0px;
+      }
+      @media screen and (max-width: 750px) {
+        flex-direction: row;
+        align-items: center;
+        width: 80vw;
+      }
+      @media screen and (max-width: 550px) {
+        flex-direction: row;
+        align-items: center;
+        width: 90vw;
+        margin: auto;
+      }
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &-img {
+        width: fit-content;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+      }
+      &-text {
+        font-size: 1.8rem;
+        color: white;
+        width: 100%;
+        text-align: center;
+        font-style: italic;
+        font-weight: 500;
+        @media screen and(max-width:800px) {
+          font-size: 1.4rem;
+          width: 90%;
+        }
+        @media screen and (max-width: 750px) {
+          text-align: left;
+          margin-left: 2rem;
+          font-size: 1.3rem;
+        }
+        margin-top: 1rem;
+      }
+    }
+    &-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &-img {
+        width: fit-content;
+        width: 80%;
+        display: flex;
+        @media screen and(max-width:1100px) {
+          width: 70%;
+        }
+        @media screen and(max-width:1000px) {
+          width: 80%;
+        }
+        @media screen and (max-width: 750px) {
+          margin-top: 3rem;
+          width: 100%;
+        }
+        @media screen and (max-width: 450px) {
+          margin-top: 3rem;
+          width: 90%;
+        }
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+      }
+      &-input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        &__title {
+          font-size: 1.8rem;
+          color: white;
+          font-style: italic;
+          font-weight: 500;
+          text-transform: uppercase;
+          @media screen and(max-width:800px) {
+            font-size: 1.4rem;
+            width: 90%;
+          }
+          @media screen and (max-width: 750px) {
+            width: 100%;
+            text-align: center;
+          }
+          @media screen and (max-width: 400px) {
+            font-size: 1rem;
+          }
+        }
+        &__container {
+          margin-top: 1.3rem;
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          input {
+            width: 32vw;
+            display: block;
+            @media screen and (max-width: 750px) {
+              width: 60vw;
+              margin: auto;
+              margin-left: 1rem;
+            }
+            @media screen and (max-width: 400px) {
+              width: 50vw;
+              font-size: 0.7rem;
+            }
+
+            padding: 0.55rem 0.7rem;
+            outline: none;
+            background-color: #2e3848;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 500;
+            font-style: italic;
+            &::placeholder {
+              font-family: "Exo 2", sans-serif;
+              color: rgb(147, 147, 147);
+              font-size: 1rem;
+              @media screen and (max-width: 750px) {
+                font-size: 0.9rem;
+              }
+              @media screen and (max-width: 450px) {
+                font-size: 0.7rem;
+              }
+            }
+            border: 1px solid white;
+            color: white;
+          }
+        }
+        &-button {
+          background: white;
+          // padding: 0.33rem 3rem;
+          padding: 0 3rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          height: 100%;
+          font-size: 1.4rem;
+          border-radius: 5px;
+          position: relative;
+          font-weight: 700;
+          text-transform: uppercase;
+          font-style: italic;
+          left: -30px;
+          @media screen and (max-width: 1400px) {
+            padding: 0 3rem;
+          }
+          @media screen and (max-width: 400px) {
+            // width: 100%;
+            text-align: center;
+            font-size: 0.7rem;
+            padding: 0rem 3rem;
+            left: -20px;
+            position: relative;
+            height: 32.5px !important;
+            // top: 1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.locations__link {
+  margin-top: 0.8rem;
+  a {
+    text-decoration: underline;
+    color: white;
+    font-size: 1.4rem;
+    @media screen and (max-width: 1150px) {
+      font-size: 1rem;
+    }
+  }
+}

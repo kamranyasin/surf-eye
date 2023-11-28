@@ -1,0 +1,17 @@
+.modal {
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+    &__title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        font-style: italic;
+        text-transform: uppercase;
+    }
+    &__content {
+        margin-top: 1.5rem;
+    }
+}

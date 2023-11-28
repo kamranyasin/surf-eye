@@ -1,0 +1,100 @@
+.footer {
+  background: #2e3848;
+  color: white;
+  &-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+  }
+  &__contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      justify-content: none;
+      text-align: center;
+      width: 100%;
+      align-items: center;
+    }
+    &__contact {
+      &-heading {
+        font-size: 1.15rem;
+        font-weight: 700;
+        font-style: italic;
+        text-transform: uppercase;
+      }
+      &-item {
+        font-weight: 400;
+        font-size: italic;
+        margin-top: 0.9rem;
+      }
+    }
+    &__social {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media screen and (max-width: 600px) {
+        align-items: flex-start;
+        margin-top: 2rem;
+        text-align: center;
+        align-items: center;
+      }
+      &-heading {
+        font-size: 1.15rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-style: italic;
+      }
+      &-links {
+        margin-top: 0.8em;
+        display: flex;
+        align-items: center;
+        &-link {
+          font-size: 2.5rem;
+          margin-left: 1rem;
+          &:first-child {
+            margin-left: 0rem;
+          }
+        }
+      }
+    }
+  }
+  &-links {
+    display: flex;
+
+    @media screen and (max-width: 900px) {
+      .temp {
+        display: none;
+      }
+      width: 100%;
+    }
+    @media screen and (max-width: 850px) {
+      width: 85%;
+    }
+    @media screen and (max-width: 590px) {
+      width: 100%;
+      font-size: 0.9rem;
+      flex-direction: column;
+      margin-top: 1.6rem;
+      text-align: center;
+      .temp {
+        display: none;
+      }
+    }
+    margin: auto;
+    margin-top: 2.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: italic;
+    justify-content: space-between;
+    @media screen and (min-width: 590px) {
+      &__link {
+        margin-left: 0rem;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

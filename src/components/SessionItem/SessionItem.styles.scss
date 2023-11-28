@@ -1,0 +1,95 @@
+.sessionItem {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.2rem;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid white;
+
+    &:hover {
+      background-color: #323d4f;
+
+  color: white;
+  .sessionItem-button {
+    background-color: white;
+    color: #2e3848;
+  }
+    }
+
+    border-radius: 7px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    @media screen and (max-width:600px) {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    color: #2e3848;
+
+    padding-top: 0.6rem;
+    &-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      @media screen and (max-width:1050px) {
+        font-size: 1.4rem;
+      }
+      @media screen and (max-width : 1150px) {
+        font-size: 1.1rem;
+    }
+      @media screen and (max-width:900px) {
+        font-size: 1.3rem;
+      }
+      @media screen and (max-width:500px) {
+        font-size: 1.1rem;
+      }
+
+    }
+    &-amount {
+      margin-top: 1.2rem;
+      font-size: 2.7rem;
+      font-style: normal;
+      font-weight: 500;
+      @media screen and (max-width:1050px) {
+        font-size: 2.3rem;
+      }
+      @media screen and (max-width:900px) {
+        font-size: 1.8rem;
+      }
+      @media screen and (max-width:500px) {
+        font-size: 2rem;
+      }
+    }
+    &-button {
+      margin-top: 2rem;
+      width: 100%;
+      font-family: "Exo 2" sans-serif;
+      font-size: 1rem;
+      background-color: #2e3848;
+      color: white;
+      padding: 0.5rem 0;
+      text-align: center;
+      border: none;
+
+      font-weight: 600;
+      font-style: italic;
+      border-radius: 5px;
+    border-radius: 4px;
+  cursor: pointer;
+
+      @media screen and (max-width:500px) {
+        font-size: 0.9rem;
+      }
+    }
+}
+
+.selected-session-price {
+  background-color: #323d4f;
+  border: 1px solid white;
+  color: white;
+  .sessionItem-button {
+    background-color: white;
+    color: #2e3848;
+  }
+
+}

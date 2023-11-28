@@ -1,0 +1,77 @@
+.profile {
+    padding: 4.7rem;
+    color: white;
+    text-transform: uppercase;
+    @media screen and (max-width:750px) {
+        padding: 4rem 3rem;
+    }
+    @media screen and (max-width:600px) {
+        padding: 3.5rem 1rem;
+    }
+    @media screen and (max-width:500px) {
+        padding-top: 2rem;
+    }
+    &__heading {
+        text-align: center;
+        font-size: 2.4rem;
+        font-weight: 700;
+        font-style: italic;
+        @media screen and (max-width:750px) {
+            font-size: 2rem;
+        }
+        @media screen and (max-width:600px) {
+            font-size: 1.8rem;
+        }
+    }
+    &__contents {
+        width: 75%;
+        margin: auto;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+        @media screen and (max-width:750px) {
+            width: 95%;
+        }
+        @media screen and (max-width:500px) {
+            margin-top: 3.5rem;
+        }
+    }
+    
+    &__desc {
+        text-align: center;
+        font-size: 1.28rem;
+        margin-top: 0.12rem;
+        @media screen and (max-width:500px) {
+            font-size: 1rem;
+        }
+    }
+    .bold {
+        font-weight: 700;
+    }
+}
+
+.profileInput {
+    width: 100%;
+    margin-top: 1.3rem;
+    &__label {
+        font-size: 1.1rem;
+        
+    }
+    @media screen and (max-width:750px) {
+        font-size: 1rem;
+    }
+    @media screen and (max-width:500px) {
+        font-size: 0.8rem;
+    }
+    input {
+        width: 100%;
+        color: white;
+        padding: 0.8rem 0.4rem;
+        outline: none;
+        margin-top: 0.8rem;
+        font-size: 1rem;
+        border-radius: 4px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.1);;
+
+    }
+}
